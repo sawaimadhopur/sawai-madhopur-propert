@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sawai Madhopur Property — जमीन खरीदें, बेचें और प्रॉपर्टी की लिस्टिंग देखें।">
+<title>Sawai Madhopur Property | जमीन खरीदें और बेचें</title>
+<style>
+:root{--green:#123d2c;--green2:#1d6044;--gold:#e9b949;--cream:#fff9e9;--ink:#18231e}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:#f7f8f4;line-height:1.5}
+header{background:var(--green);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand{font-size:1.2rem;font-weight:800}.brand span{color:var(--gold)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600;font-size:.95rem}
+.hero{padding:65px 5%;color:white;background:linear-gradient(90deg,rgba(8,38,27,.92),rgba(8,38,27,.45)),linear-gradient(135deg,#386a48,#b9a36c);min-height:330px;display:flex;align-items:center}
+.hero-inner{max-width:760px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.1;margin:12px 0}.hero p{font-size:1.1rem;max-width:650px}
+.btn{display:inline-block;border:0;border-radius:8px;padding:12px 18px;background:var(--gold);color:#1e291e;font-weight:800;text-decoration:none;cursor:pointer;margin:5px 5px 0 0}.btn.secondary{background:white;color:var(--green)}.btn.green{background:var(--green2);color:white}
+.wrap{max-width:1150px;margin:auto;padding:36px 5%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap}.section-head h2{margin:0;color:var(--green);font-size:1.8rem}.muted{color:#647168}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.filters input,.filters select,.form-grid input,.form-grid select,.form-grid textarea{padding:12px;border:1px solid #d7ded7;border-radius:8px;font:inherit;background:white;width:100%}.filters input{flex:2;min-width:200px}.filters select{flex:1;min-width:160px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px #163d2b12;border:1px solid #e7ece6}.photo{height:155px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d9e6cf,#a5c5a1);font-size:3rem}.card-content{padding:17px}.tag{display:inline-block;background:#e7f1e8;color:var(--green);border-radius:30px;padding:4px 10px;font-size:.8rem;font-weight:700}.card h3{margin:10px 0 5px}.price{font-size:1.25rem;color:var(--green2);font-weight:800}.detail{font-size:.92rem;color:#5e6b62;margin:7px 0}.card-actions{margin-top:12px}
+.notice{background:#fff3cd;border:1px solid #f1dda0;padding:13px 15px;border-radius:10px;margin:20px 0;color:#5e4a12}
+.panel{background:white;border-radius:16px;padding:24px;box-shadow:0 5px 18px #163d2b0d}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form-grid label{font-weight:700;font-size:.93rem}.form-grid label input,.form-grid label select,.form-grid label textarea{display:block;margin-top:6px;font-weight:400}.form-grid .full{grid-column:1/-1}textarea{min-height:100px;resize:vertical}.contact{background:var(--green);color:white}.contact h2{color:white}.contact a{color:var(--gold)}footer{background:#0b2b1e;color:#dce7dd;padding:22px 5%;text-align:center;font-size:.9rem}
+@media(max-width:600px){.hero{padding:45px 5%}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}nav{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🏡 <span>SAWAI MADHOPUR</span> PROPERTY</div>
+  <nav><a href="#listings">प्रॉपर्टी देखें</a><a href="#add-listing">लिस्टिंग डालें</a><a href="#contact">संपर्क</a></nav>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">BUY • SELL • INVEST</div>
+    <h1>आपकी जमीन, आपका अगला कदम</h1>
+    <p>सवाई माधोपुर और रणथंभौर क्षेत्र में कृषि भूमि, फार्महाउस, आवासीय प्लॉट और कमर्शियल प्रॉपर्टी की जानकारी एक जगह।</p>
+    <a class="btn" href="#listings">प्रॉपर्टी देखें</a>
+    <a class="btn secondary" href="#add-listing">अपनी प्रॉपर्टी जोड़ें</a>
+  </div>
+</section>
+
+<section class="wrap" id="listings">
+  <div class="section-head"><div><h2>प्रॉपर्टी लिस्टिंग</h2><p class="muted">उपलब्ध जमीन और प्रॉपर्टी खोजें।</p></div><span class="tag">सवाई माधोपुर, राजस्थान</span></div>
+  <div class="filters">
+    <input id="search" placeholder="लोकेशन या प्रॉपर्टी खोजें…" aria-label="खोजें">
+    <select id="typeFilter" aria-label="प्रॉपर्टी प्रकार"><option value="">सभी प्रकार</option><option>कृषि भूमि</option><option>फार्महाउस भूमि</option><option>आवासीय प्लॉट</option><option>कमर्शियल प्रॉपर्टी</option><option>अन्य</option></select>
+    <select id="dealFilter" aria-label="खरीद या किराया"><option value="">सभी लिस्टिंग</option><option>बेचने के लिए</option><option>खरीदने की मांग</option></select>
+  </div>
+  <div class="notice">नोट: नीचे दिए गए उदाहरण सिर्फ वेबसाइट का डेमो हैं। वास्तविक प्रॉपर्टी की जानकारी मालिक/एजेंट से सत्यापित करें।</div>
+  <div class="grid" id="listingGrid">
+    <article class="card" data-type="कृषि भूमि" data-deal="बेचने के लिए" data-search="कृषि भूमि सवाई माधोपुर">
+      <div class="photo">🌾</div><div class="card-content"><span class="tag">कृषि भूमि</span><h3>कृषि भूमि — डेमो लिस्टिंग</h3><div class="price">कीमत के लिए संपर्क करें</div><div class="detail">📍 सवाई माधोपुर क्षेत्र</div><p class="muted">यह उदाहरण है। वास्तविक जानकारी जल्द जोड़ें।</p><div class="card-actions"><a class="btn green" href="#contact">पूछताछ करें</a></div></div>
+    </article>
+    <article class="card" data-type="फार्महाउस भूमि" data-deal="बेचने के लिए" data-search="फार्महाउस भूमि रणथंभौर">
+      <div class="photo">🏡</div><div class="card-content"><span class="tag">फार्महाउस भूमि</span><h3>फार्महाउस भूमि — डेमो लिस्टिंग</h3><div class="price">कीमत के लिए संपर्क करें</div><div class="detail">📍 रणथंभौर क्षेत्र</div><p class="muted">यह उदाहरण है। वास्तविक जानकारी जल्द जोड़ें।</p><div class="card-actions"><a class="btn green" href="#contact">पूछताछ करें</a></div></div>
+    </article>
+    <article class="card" data-type="आवासीय प्लॉट" data-deal="बेचने के लिए" data-search="आवासीय प्लॉट सवाई माधोपुर">
+      <div class="photo">🏘️</div><div class="card-content"><span class="tag">आवासीय प्लॉट</span><h3>आवासीय प्लॉट — डेमो लिस्टिंग</h3><div class="price">कीमत के लिए संपर्क करें</div><div class="detail">📍 सवाई माधोपुर क्षेत्र</div><p class="muted">यह उदाहरण है। वास्तविक जानकारी जल्द जोड़ें।</p><div class="card-actions"><a class="btn green" href="#contact">पूछताछ करें</a></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" id="add-listing">
+  <div class="section-head"><div><h2>अपनी प्रॉपर्टी की लिस्टिंग डालें</h2><p class="muted">जानकारी भरें—आपके फोन/WhatsApp में संदेश तैयार हो जाएगा।</p></div></div>
+  <div class="panel">
+    <form id="listingForm" class="form-grid">
+      <label>आपका नाम<input id="owner" required placeholder="पूरा नाम"></label>
+      <label>मोबाइल नंबर<input id="phone" required inputmode="tel" placeholder="10 अंकों का नंबर"></label>
+      <label>प्रॉपर्टी का प्रकार<select id="propertyType" required><option value="">चुनें</option><option>कृषि भूमि</option><option>फार्महाउस भूमि</option><option>आवासीय प्लॉट</option><option>कमर्शियल प्रॉपर्टी</option><option>अन्य</option></select></label>
+      <label>आपकी लिस्टिंग<select id="deal" required><option>बेचने के लिए</option><option>खरीदने की मांग</option></select></label>
+      <label>लोकेशन<input id="location" required placeholder="गांव/इलाका, सवाई माधोपुर"></label>
+      <label>कीमत<input id="price" placeholder="जैसे ₹25 लाख / बातचीत से"></label>
+      <label>जमीन का क्षेत्रफल<input id="area" placeholder="जैसे 2 बीघा / 1,000 वर्ग गज"></label>
+      <label>फोटो (वैकल्पिक)<input id="photo" type="file" accept="image/*"></label>
+      <label class="full">अतिरिक्त जानकारी<textarea id="description" placeholder="सड़क, पानी, कागजात और अन्य विवरण"></textarea></label>
+      <div class="full"><button class="btn green" type="submit">WhatsApp पर लिस्टिंग भेजें</button><p class="muted">लिस्टिंग भेजने से पहले जमीन के मालिकाना हक और दस्तावेजों की जांच करें।</p></div>
+    </form>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <h2>संपर्क करें</h2><p>जमीन खरीदने या बेचने की जानकारी के लिए कॉल या WhatsApp करें।</p>
+  <p>📞 <a href="tel:7976274622">7976274622</a> &nbsp; | &nbsp; <a href="tel:9785120730">9785120730</a></p>
+  <a class="btn" href="https://wa.me/917976274622?text=Namaste%2C%20mujhe%20Sawai%20Madhopur%20Property%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">WhatsApp पर संपर्क करें</a>
+</section>
+<footer>© <span id="year"></span> Sawai Madhopur Property · जमीन खरीदें • बेचें • निवेश करें</footer>
+<script>
+const $=id=>document.getElementById(id);
+function filterCards(){const q=$('search').value.toLowerCase().trim(),t=$('typeFilter').value,d=$('dealFilter').value;document.querySelectorAll('#listingGrid .card').forEach(c=>{const ok=(!q||(c.dataset.search+' '+c.innerText).toLowerCase().includes(q))&&(!t||c.dataset.type===t)&&(!d||c.dataset.deal===d);c.style.display=ok?'':'none'})}
+['search','typeFilter','dealFilter'].forEach(id=>$(id).addEventListener('input',filterCards));
+$('listingForm').addEventListener('submit',e=>{e.preventDefault();const phone=$('phone').value.replace(/\D/g,'');if(phone.length<10){alert('कृपया सही मोबाइल नंबर लिखें।');return}const msg=`Sawai Madhopur Property पर नई लिस्टिंग%0Aनाम: ${$('owner').value}%0Aमोबाइल: ${$('phone').value}%0Aप्रॉपर्टी: ${$('propertyType').value}%0Aलिस्टिंग: ${$('deal').value}%0Aलोकेशन: ${$('location').value}%0Aकीमत: ${$('price').value||'नहीं बताई'}%0Aक्षेत्रफल: ${$('area').value||'नहीं बताया'}%0Aविवरण: ${$('description').value||'नहीं दिया'}`;window.open('https://wa.me/917976274622?text='+msg,'_blank','noopener')});
+$('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
